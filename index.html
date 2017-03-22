@@ -19,7 +19,7 @@
 		<!-- style start -->
 		<link href="css/custom.bootstrap.min.css" media="all" rel="stylesheet" type="text/css">
 		<link href="css/style.css" media="all" rel="stylesheet" type="text/css">
-		<link href="css/font-awesome-4.7.0/css/font-awesome.min.css" media="all" rel="stylesheet" type="text/css"><!-- style end -->
+
 
 
 
@@ -29,7 +29,7 @@
 		<!--[if lt IE 9]>
             <script src="bower_components/html5shiv/dist/html5shiv.js" type="text/javascript"></script>
         <![endif]-->
-		<script src="https://use.typekit.net/npp3nel.js"></script>
+		
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	</head>
 	<body>
@@ -59,26 +59,6 @@
 				</div>
 			</div>
 		</div><!-- preloader end -->
-
-		<!-- background fullscreen FIX start -->
-		<div class="background-fullscreen-fix">
-			<!-- hero bg start -->
-			<div class="hero-fullscreen hero-bg">
-				<!-- split slider start -->
-				<div class="hero-slider-split hero-slider-navigation hero-fullscreen-FIX">
-					<!-- slide 1 start -->
-					<div class="slide bg-img-split-1"></div><!-- slide 1 end -->
-					<!-- slide 2 start -->
-					<div class="slide bg-img-split-2"></div><!-- slide 2 end -->
-					<!-- slide 3 start -->
-					<div class="slide bg-img-split-3"></div><!-- slide 3 end -->
-					<!-- slide 4 start -->
-					<div class="slide bg-img-split-4"></div><!-- slide 4 end -->
-				</div><!-- split slider end -->
-				<!-- overlay start -->
-				<div class="overlay"></div><!-- overlay end -->
-			</div><!-- hero bg end -->
-		</div><!-- background fullscreen FIX end -->
 
 		<!-- menu mobile start -->
 		<div class="navigation-fire fade-position" id="navigation-icon">
@@ -160,24 +140,13 @@
 										</div>
 										<div class="title-intro-time">
 											<h1 class="title-intro-time">
-												LOVECRAFT<span class="intro-subtitle">It's in the name</span>
+												LOVECRAFT<span class="period">.</span><span class="io">io</span> <span class="intro-subtitle">It's in the name</span>
 											</h1>
 										</div>
 										<div class="container-time">
 											<div class="time-column-3">
 												<!-- owl carousel home start -->
-												<ul class="home-owl">
-													<li>
-														<h3>
-															Web <span class="change-color">Design</span>
-														</h3>
-													</li>
-													<li>
-														<h3>
-															Web <span class="change-color">Development</span>
-														</h3>
-													</li>
-												</ul><!-- owl carousel home end -->
+												<h3>[ <span class="typed"></span> ]</h3>
 											</div>
 											<div class="time-column-4">
 												<div class="line-bottom-time"></div>
@@ -592,6 +561,16 @@
 		<!-- scripts start -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		<script src="js/plugins.js" type="text/javascript"></script>
+		<script src="js/typed.min.js"></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function(){
+				Typed.new(".typed", {
+					strings: ["Web Design", "Web Development", "Brand Navigation", "Marketing"],
+					loop: true
+
+				});
+			});
+		</script>
 		<script src="js/main.js" type="text/javascript">
 		</script> <!-- scripts end -->
 

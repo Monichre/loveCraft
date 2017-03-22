@@ -67,8 +67,16 @@ line-height: 1.5;
 font-style: normal;
 font-weight: 400;
 text-align: left;
-color: #fff;
-background: #111;
+/*color: #fff;*/
+/*background: #111;*/
+background-image: url(../img/background/white-ish.jpg);
+background-repeat: no-repeat;
+background-position: center;
+-webkit-background-size: cover;
+   -moz-background-size: cover;
+    -ms-background-size: cover;
+     -o-background-size: cover;
+        background-size: cover;
  -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
 -webkit-text-size-adjust: 100%;
@@ -216,7 +224,7 @@ text-align: center;
 text-transform: uppercase;
 margin: 0;
 padding: 0 0 0 25px;
-text-shadow: 1px 1px 2px #111;
+color: #fff;
 }
 
 .about-owl h5 {
@@ -269,7 +277,7 @@ margin: 0 auto;
 }
 
 .lower-content p {
-font-weight: 400;
+font-weight: 500;
 letter-spacing: 0.05em;
 padding: 10px;
 }
@@ -507,7 +515,7 @@ width: 155px;
 clear: both;
 list-style: none;
 text-align: left;
-text-shadow: 1px 1px 2px #111;
+/*text-shadow: 1px 1px 2px #111;*/
 }
 
 ul.mainNav li a {
@@ -517,7 +525,7 @@ font-weight: 400;
 text-transform: uppercase;
 color: #fff;
 display: block;
-margin: 0 0 8px 0;
+margin: 0 0 20px 0;
 padding: 0 0 0 10px;
 list-style: none;
 outline: none;
@@ -542,11 +550,17 @@ ul.mainNav li a.active {
 .navNumber {
 font-size: 25px;
 padding: 0;
+font-family: 'Oswald', sans-serif;
+font-weight: 700;
 }
 
+.navTitle, .navSubtitle {
+
+}
 .navTitle {
 font-size: 15px;
-color: #fff;
+/*color: #fff;*/
+color: #333;
 padding: 0 0 0 10px;
 letter-spacing: 0.05em;
 }
@@ -3302,17 +3316,17 @@ height: auto;
 margin: 0 auto 30px auto;
 }
 
-.home-owl h3 {
+.time-column-3 h3 {
 font-family: 'Oswald', sans-serif;
 font-size: 18px;
 line-height: 40px;
 font-style: normal;
 text-transform: uppercase;
 text-align: right;
-font-weight: 400;
+font-weight: 700;
 letter-spacing: 0.05em;
-color: #fff;
-text-shadow: 1px 1px 2px #111;
+color: #333;
+/*text-shadow: 1px 1px 2px #111;*/
 margin: 0 5px 0 0;
 }
 
@@ -3330,8 +3344,8 @@ text-transform: uppercase;
 text-align: left;
 font-weight: 400;
 letter-spacing: 0.05em;
-color: #fff;
-text-shadow: 1px 1px 2px #111;
+color: #333;
+/*text-shadow: 1px 1px 2px #111;*/
 margin: 0 0 0 6px;
 }
 
@@ -3341,18 +3355,27 @@ letter-spacing: 0.05em;
 }
 
 .title-intro-time {
+/*font-family: futura-pt, sans-serif;*/
+font-style: normal;
+font-weight: 800;
 font-family: 'Oswald', sans-serif;
 font-size: 160px;
 line-height: 1;
 font-style: normal;
-font-weight: 400;
+/*font-weight: 400;*/
 letter-spacing: 2px;
 text-transform: uppercase;
 text-align: center;
-text-shadow: 1px 1px 2px #111;
+text-shadow: -1px -1px 2px #eee;
 margin: 29px auto 32px 3px;
 padding: 0;
-color: #ba2424;
+color: #fff;
+}
+.title-intro-time .period {
+    color: #333;
+}
+.title-intro-time .io {
+    color: #ba2424;
 }
 
 .line-bottom-time {
@@ -3375,12 +3398,10 @@ font-weight: 400;
 color: #fff;
 letter-spacing: 0.05em;
 text-transform: uppercase;
-background: #000;
+color: #ba2424;
 line-height: 22px;
 text-align: center;
-border: 1px solid #fff;
-width: 174px;
-height: 25px;
+
 }
 /* intro TIME style end */
 
@@ -3575,6 +3596,7 @@ font-family: 'Oswald', sans-serif;
     font-size: 60px;
     font-weight: 700;
     line-height: 1;
+    color: #fff;
 }
 
 .quote-mark-l {
@@ -4810,4 +4832,25 @@ padding: 0 20px 0 20px;
 /* colors */
 .red a {
 	background: #b31217;
+}
+.typed-cursor{
+	opacity: 1;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+@keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-moz-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
 }
